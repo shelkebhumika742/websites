@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Photography Gallery</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#111;
+    color:white;
+}
+
+/* HEADER */
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 50px;
+    background:#000;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#f7c948;
+}
+
+.menu ul{
+    list-style:none;
+}
+
+.menu ul li{
+    display:inline-block;
+    margin-left:20px;
+}
+
+.menu ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+}
+
+.menu ul li a:hover{
+    color:#f7c948;
+}
+
+/* BANNER */
+.banner{
+    height:500px;
+    background:url('https://images.unsplash.com/photo-1519741497674-611481863552') center/cover no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.banner h1{
+    font-size:50px;
+    background:rgba(0,0,0,0.6);
+    padding:15px 30px;
+    border-radius:10px;
+}
+
+/* ABOUT */
+.about{
+    padding:50px 30px;
+    text-align:center;
+}
+
+.about h2{
+    color:#f7c948;
+    margin-bottom:15px;
+}
+
+.about p{
+    max-width:900px;
+    margin:auto;
+    color:#ddd;
+    line-height:1.7;
+    font-size:18px;
+}
+
+/* SERVICES */
+.services{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    padding:50px 20px;
+}
+
+.service-box{
+    width:270px;
+    background:#222;
+    padding:20px;
+    text-align:center;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.service-box:hover{
+    transform:scale(1.05);
+}
+
+.service-box h3{
+    color:#f7c948;
+    margin-bottom:10px;
+}
+
+.service-box p{
+    color:#ccc;
+    font-size:15px;
+    line-height:1.5;
+}
+
+.price{
+    color:#00ffcc;
+    font-size:20px;
+    font-weight:bold;
+    margin-top:10px;
+}
+
+/* GALLERY */
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:15px;
+    padding:20px;
+}
+
+.gallery img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+/* FOOTER */
+.footer{
+    text-align:center;
+    padding:20px;
+    background:#000;
+    color:#aaa;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+.header{
+    flex-direction:column;
+}
+
+.menu ul li{
+    display:block;
+    margin:10px 0;
+}
+
+.banner h1{
+    font-size:30px;
+}
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="header">
+    <div class="logo">📸 PhotoGallery</div>
+
+    <div class="menu">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- BANNER -->
+<div class="banner">
+    <h1>Capturing Beautiful Wedding Moments 💍</h1>
+</div>
+
+<!-- ABOUT -->
+<div class="about">
+    <h2>About My Photography</h2>
+    <p>
+        I am a professional photographer who captures weddings, portraits, and nature moments.
+        My goal is to turn real emotions into cinematic memories using creative lighting,
+        angles, and storytelling photography style.
+    </p>
+</div>
+
+<!-- SERVICES (FIXED) -->
+<div class="services">
+
+    <div class="service-box">
+        <h3>Wedding Shoot</h3>
+        <p>Complete wedding coverage with candid cinematic photography.</p>
+        <div class="price">₹25,000</div>
+    </div>
+
+    <div class="service-box">
+        <h3>Pre-Wedding Shoot</h3>
+        <p>Romantic couple shoot with creative outdoor locations.</p>
+        <div class="price">₹10,000</div>
+    </div>
+
+    <div class="service-box">
+        <h3>Portrait Shoot</h3>
+        <p>Professional studio portraits with perfect lighting setup.</p>
+        <div class="price">₹5,000</div>
+    </div>
+
+</div>
+
+<!-- GALLERY -->
+<div class="gallery">
+    <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470">
+    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+    <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e">
+    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+    © 2026 Photography Gallery | All Rights Reserved
+</div>
+
+</body>
+</html>
